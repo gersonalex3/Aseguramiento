@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-info" style="font-weight:bold">
         <a class="navbar-brand" href="#">
-            <img src="@Url.Content("~/Imagenes/LogoOrion.png")" width="110" height="75" alt="logo">
+            <img src="@Url.Content("~/Imagenes/Logo1.png")" width="110" height="75" alt="logo">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,12 +51,12 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - ORION CxC</p>
+            <p>&copy; @DateTime.Now.Year - The Geek Collector</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    <script src="/Scripts/bootstrap.js"></script>
     @Scripts.Render("~/Content/PluginsJS")
 
     <script type="text/javascript">
@@ -120,7 +120,7 @@
         $.MisUrls.urls({ _ObtenerVentas: '@Url.Action("Obtener", "Venta")' });
 
         //CONTROLADOR REPORTE
-        //$.MisUrls.urls({ _ObtenerReporteProducto :'@Url.Action("ObtenerProducto", "Reporte")' });
+        $.MisUrls.urls({ _ObtenerReporteProducto :'@Url.Action("ObtenerProducto", "Reporte")' });
         $.MisUrls.urls({ _ObtenerReporteVenta :'@Url.Action("ObtenerVenta", "Reporte")' });
 
 
