@@ -27,7 +27,7 @@ namespace VentasWeb.Helpers
                 foreach (Menu item in rptUsuario.oListaMenu)
                 {
                     sb.AppendLine("<li class='nav-item dropdown'>");
-                    sb.AppendLine("<a class='nav-link dropdown-toggle' href='#' data-toggle='dropdown'><i class='" + item.Icono +"'></i> " + item.Nombre + "</a>");
+                    sb.AppendLine("<a class='nav-link dropdown-toggle' href='#' data-bs-toggle='dropdown'><i class='" + item.Icono +"'></i> " + item.Nombre + "</a>");
 
                     sb.AppendLine("<div class='dropdown-menu drop-menu'>");
                     foreach (SubMenu subitem in item.oSubMenu)
